@@ -12,17 +12,29 @@
 
 </head>
 
-<body>
-  <button class="btn btn-neutral">Neutral</button>
-  <button class="btn btn-primary">Primary</button>
-  <button class="btn btn-secondary">Secondary</button>
-  <button class="btn btn-accent">Accent</button>
-  <button class="btn btn-info">Info</button>
-  <button class="btn btn-success">Success</button>
-  <button class="btn btn-warning">Warning</button>
-  <button class="btn btn-error">Error</button>
+<body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
+  <div class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+    <img src="./assets/Group.png" alt="">
+  </div>
+  <form class="bg-white rounded-xl p-8 w-[350px]">
+    <div class="mt-5">
+      <label class="font-semibold" for="">Mobile Number</label>
+      <br />
+      <input type="text" placeholder="Enter your number" id="mobile-number"
+        class="input bg-[#f4f5f7] mt-3 rounded-3xl  border-none focus:outline-none focus:ring-0 focus:border-none" />
+    </div>
+    <div class="mt-5">
+      <label class="font-semibold" for="">4 Digit Pin</label>
+      <br />
+      <input type="text" id="pin-number" placeholder="Enter 4 Digit Pin"
+        class="input bg-[#f4f5f7] mt-3 rounded-3xl  border-none focus:outline-none focus:ring-0 focus:border-none" />
+    </div>
+    <button type="button" class="btn btn-active bg-[#0874f2] mt-3 w-full rounded-3xl text-white font-bold"
+      id="loginButton">Login</button>
+  </form>
 
-
+  <!-- js script  -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
